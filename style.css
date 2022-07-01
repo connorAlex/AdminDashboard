@@ -39,12 +39,13 @@ body div{
  /* header */
 
 .header{
+    display:flex;
+    flex-direction: column;
     border: 2px solid;
     border-radius: 8px;
     grid-column: 1 / 4;
     grid-row: 1;
     background-color: var(--stone-100-color);
-
     margin: 15px;
 }
 
@@ -74,7 +75,11 @@ body div{
 .bottom{
     display:flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
+    
+}
+.bottom > div{
+    gap: 15px;
 }
 
 .profile{
@@ -96,14 +101,16 @@ body div{
 }
 .btns{
     display: flex;
-    
     justify-content: space-around;
     gap: 35px;
 }
 
-input{
-    width: 35vw;
+.bar{
+    width: 25vw;
+    height: 25px;
     margin-inline-start: 20px;
+    border: solid 2px;
+    border-radius: 8px;;
 }
 
 /* Side Bar */
@@ -138,6 +145,10 @@ input{
     padding: 10px;
     
 }
+.mid {
+    margin-top: 50px;
+    gap: 50px;
+}
 a{
     text-decoration: none;
     color: black;
@@ -154,6 +165,7 @@ a:hover{
     padding: 20px;
     grid-column: 1 / 2;
     background-color: var(--stone-200-color);
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     min-height: 100%;
 }
@@ -229,12 +241,12 @@ a:hover{
 
 button{
     background: var(--stone-300-color);
-	color: inherit;
-	border: solid 2pt;
+	border: solid 2px;
 	font: inherit;
 	cursor: pointer;
     border-radius: 8px;
-	outline: inherit;
+    padding-inline: 15px;
+    margin: 10px;
 }
 button:hover{
     background: var(--stone-600-color);
