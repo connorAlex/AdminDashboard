@@ -85,15 +85,11 @@ body div{
 .profile{
     display: flex;
     justify-content: space-around;
-    padding-inline: 10px;
     gap: 50px;
     border: 2px solid;
     border-radius: 8px;
     background-color: var(--stone-300-color);
-}
-
-.profile > div :first-child{
-    font-size: 25px
+    padding: 5px;
 }
 
 .profile > div > p {
@@ -130,6 +126,7 @@ body div{
     flex-wrap: wrap;
     margin-top: 20px;
     padding: 10px;
+    text-align: center;
 }
 .sidebar > div {
     display: flex;
@@ -145,15 +142,18 @@ body div{
     padding: 10px;
     
 }
+
 .mid {
     margin-top: 50px;
     gap: 50px;
 }
+
 a{
     text-decoration: none;
     color: black;
     padding: 5px;
 }
+
 a:hover{
     text-decoration: underline;
 }
@@ -165,14 +165,13 @@ a:hover{
     padding: 20px;
     grid-column: 1 / 2;
     background-color: var(--stone-200-color);
-    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
     min-height: 100%;
 }
 
 .tile{
     display: grid;
-
     gap: 10px;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 1fr;
@@ -187,10 +186,9 @@ a:hover{
 .updates{
     display:flex;
     flex-direction: column;
-    padding: 20px;
     gap: 2vw;
     background-color: var(--stone-200-color);
-    justify-content: center;
+    margin-top: 20px;
 }
 
 .announce{
@@ -202,15 +200,13 @@ a:hover{
     padding: 10px;
     background-color: white;
 }
-.announce > p {
-    
-    
-}
+
 .announce > div{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .trending{
@@ -222,17 +218,20 @@ a:hover{
     gap: 20px;
     background-color: white;
 }
+
 .trending > div {
     display:flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
 }
+
 .trending > div > div{
     display: flex; 
     flex-direction: column;
     
 }
+
 .trending > div > img{
     height: 50px;
     width: auto;
@@ -248,6 +247,7 @@ button{
     padding-inline: 15px;
     margin: 10px;
 }
+
 button:hover{
     background: var(--stone-600-color);
     color: var(--stone-100-color);
@@ -256,11 +256,12 @@ button:hover{
     border-radius: 8px;
 }
 
-.imgbtn{
+.imgbtn, img{
     margin: 5px;
     height: auto;
     width: 45px;
 }
+
 .imgbtn:hover{
     transform: scale(1.1);
 }
