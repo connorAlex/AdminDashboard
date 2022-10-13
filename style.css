@@ -51,6 +51,7 @@ body div{
 
 .top{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-right: 2vw;
     padding: 5px;
@@ -58,22 +59,16 @@ body div{
 
 .top > div{
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.top > div > button{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
+
 .bottom{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 15px;
     
@@ -245,6 +240,7 @@ button{
 	cursor: pointer;
     border-radius: 8px;
     padding-inline: 15px;
+    height: 58px;
     margin: 10px;
 }
 
@@ -258,7 +254,7 @@ button:hover{
 
 .imgbtn, img{
     margin: 5px;
-    height: auto;
+    height: 50px;
     width: 45px;
 }
 
